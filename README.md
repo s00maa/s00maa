@@ -1,7 +1,3 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/chapter-1-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/chapter-1-light.svg">
-    <img src="assets/chapter-1-light.svg" width="100%" alt="Chapter I: The Backend Arts. A painted spellbook with four spells: Python, Django, FastAPI and PostgreSQL." />
-  </picture>
+  <img src="assets/run.svg" width="100%" alt="s00maa's run: Python, Django, FastAPI, PostgreSQL and React jokers score a Full Stack hand and defeat the Legacy Code blind." />
 </p>
