@@ -28,11 +28,9 @@
 <mask id="rm-postgresql" maskUnits="userSpaceOnUse" x="0" y="0" width="1536" height="1024"><g clip-path="url(#ring-postgresql)"><use href="#art" xlink:href="#art" filter="url(#runes)"/></g></mask>
 <radialGradient id="sw-postgresql" cx="1095" cy="628" r="150" gradientUnits="userSpaceOnUse"><stop offset="0.6" stop-color="#c9a2ff" stop-opacity="0"/><stop offset="0.85" stop-color="#fff8e6" stop-opacity="1"/><stop offset="1" stop-color="#c9a2ff" stop-opacity="0.6"/></radialGradient>
 <style>.bloom{mix-blend-mode:screen;opacity:.15;animation:breathe 6s ease-in-out infinite}.sweep{mix-blend-mode:screen;animation:turn 16s linear infinite}.mote{animation:rise 7s ease-in infinite;opacity:0}.ink{mix-blend-mode:multiply}@keyframes breathe{0%,100%{opacity:.15}50%{opacity:.85}}@keyframes turn{to{transform:rotate(360deg)}}@keyframes rise{0%{opacity:0;transform:translateY(0)}15%{opacity:.95}100%{opacity:0;transform:translateY(-70px)}}@media (prefers-reduced-motion:reduce){.bloom{animation:none;opacity:.25}.sweep{animation:none;opacity:0}.mote{animation:none;opacity:0}}.python .bloom{animation-delay:0s}.python .sweep{transform-origin:490px 235px;animation-duration:16s;}.django .bloom{animation-delay:-1.7s}.django .sweep{transform-origin:1094px 235px;animation-duration:19s;animation-direction:reverse;}.fastapi .bloom{animation-delay:-3.1s}.fastapi .sweep{transform-origin:488px 628px;animation-duration:14s;}.postgresql .bloom{animation-delay:-4.2s}.postgresql .sweep{transform-origin:1095px 628px;animation-duration:21s;animation-direction:reverse;}</style>
-<filter id="edge" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="2.2"/></filter>
-<filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feGaussianBlur stdDeviation="16"/></filter>
-<mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="1536" height="1024"><polygon points="58,68 205,66 215,47 1415,50 1442,76 1498,80 1502,958 222,946 204,858 58,846" fill="#fff" filter="url(#edge)"/></mask>
+<filter id="fade" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="34"/></filter>
+<mask id="cut" maskUnits="userSpaceOnUse" x="0" y="0" width="1536" height="1024"><polygon points="58,68 205,66 215,47 1415,50 1442,76 1498,80 1502,958 222,946 204,858 58,846" fill="#fff" stroke="#fff" stroke-width="30" stroke-linejoin="round" filter="url(#fade)"/></mask>
 </defs>
-<polygon points="58,68 205,66 215,47 1415,50 1442,76 1498,80 1502,958 222,946 204,858 58,846" transform="translate(0 14)" fill="#1b1209" opacity="0.45" filter="url(#shadow)"/>
 <g mask="url(#cut)">
 <use href="#art" xlink:href="#art"/>
 <g class="python">
